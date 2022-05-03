@@ -8,20 +8,21 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+Changed both the x and y coordinates of its internal rectangle object by a random value: -1, 0, or 1 (in the enemy class)
+
 #### Unique Feature
- < Describe the unique feature you added >
+ Added projectile.py so an image travels across the screen 
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 0
 
-Grace days remaining: < # >/5
+Grace days remaining: 5/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+N/A
 
 ## REFERENCES:
- < List any outside resources used >
+geeksforgeeks 
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+N/A

@@ -1,7 +1,7 @@
 import pygame
 import random
 #model
-class Enemy(pygame.sprite.Sprite):
+class Projectile(pygame.sprite.Sprite):
     def __init__(self, name, x, y, img_file):
         #initialize all the Sprite functionality
         pygame.sprite.Sprite.__init__(self)
@@ -17,10 +17,13 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
         #set other attributes
-        self.name = name + str(id(self))
-        self.speed = 2
+        self.name = name
+        self.speed = 10
+        self.limit = 640
 
     def update(self):
-        self.rect.x += random.randrange(-1, 1)
-        self.rect.y += random.randrange(-1, 1)
-        # print("'Update me,' says " + self.name)
+        self.rect.x += self.speed
+
+        # check if we are outside the screen
+        if self.rect.x > self.limit:
+            self.kill()
